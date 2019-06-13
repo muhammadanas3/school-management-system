@@ -1,0 +1,848 @@
+
+ Wed, 12 Dec 2018 10:18:09 +0100 INFO : [execute] (C:\xampp\htdocs\OOADProject\student\includes\vendor\authorizenet\authorizenet\lib\net\authorize\api\controller\base\ApiOperationBase.php : 114) - Request Serialization Begin
+ Wed, 12 Dec 2018 10:18:09 +0100 DEBUG : [execute] (C:\xampp\htdocs\OOADProject\student\includes\vendor\authorizenet\authorizenet\lib\net\authorize\api\controller\base\ApiOperationBase.php : 115) - net\authorize\api\contract\v1\CreateTransactionRequest Object
+(
+    [transactionRequest:net\authorize\api\contract\v1\CreateTransactionRequest:private] => net\authorize\api\contract\v1\TransactionRequestType Object
+        (
+            [transactionType:net\authorize\api\contract\v1\TransactionRequestType:private] => authOnlyTransaction
+            [amount:net\authorize\api\contract\v1\TransactionRequestType:private] => 30000
+            [currencyCode:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [payment:net\authorize\api\contract\v1\TransactionRequestType:private] => net\authorize\api\contract\v1\PaymentType Object
+                (
+                    [creditCard:net\authorize\api\contract\v1\PaymentType:private] => net\authorize\api\contract\v1\CreditCardType Object
+                        (
+                            [cardCode:net\authorize\api\contract\v1\CreditCardType:private] => xxxx
+                            [isPaymentToken:net\authorize\api\contract\v1\CreditCardType:private] => 
+                            [cryptogram:net\authorize\api\contract\v1\CreditCardType:private] => 
+                            [tokenRequestorName:net\authorize\api\contract\v1\CreditCardType:private] => 
+                            [tokenRequestorId:net\authorize\api\contract\v1\CreditCardType:private] => 
+                            [tokenRequestorEci:net\authorize\api\contract\v1\CreditCardType:private] => 
+                            [cardNumber:net\authorize\api\contract\v1\CreditCardSimpleType:private] => xxxx-1111
+                            [expirationDate:net\authorize\api\contract\v1\CreditCardSimpleType:private] => xxxx
+                        )
+
+                    [bankAccount:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [trackData:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [encryptedTrackData:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [payPal:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [opaqueData:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [emv:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [dataSource:net\authorize\api\contract\v1\PaymentType:private] => 
+                )
+
+            [profile:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [solution:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [callId:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [terminalNumber:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [authCode:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [refTransId:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [splitTenderId:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [order:net\authorize\api\contract\v1\TransactionRequestType:private] => net\authorize\api\contract\v1\OrderType Object
+                (
+                    [invoiceNumber:net\authorize\api\contract\v1\OrderType:private] => 10101
+                    [description:net\authorize\api\contract\v1\OrderType:private] => Student Fees
+                    [discountAmount:net\authorize\api\contract\v1\OrderType:private] => 
+                    [taxIsAfterDiscount:net\authorize\api\contract\v1\OrderType:private] => 
+                    [totalTaxTypeCode:net\authorize\api\contract\v1\OrderType:private] => 
+                    [purchaserVATRegistrationNumber:net\authorize\api\contract\v1\OrderType:private] => 
+                    [merchantVATRegistrationNumber:net\authorize\api\contract\v1\OrderType:private] => 
+                    [vatInvoiceReferenceNumber:net\authorize\api\contract\v1\OrderType:private] => 
+                    [purchaserCode:net\authorize\api\contract\v1\OrderType:private] => 
+                    [summaryCommodityCode:net\authorize\api\contract\v1\OrderType:private] => 
+                    [purchaseOrderDateUTC:net\authorize\api\contract\v1\OrderType:private] => 
+                    [supplierOrderReference:net\authorize\api\contract\v1\OrderType:private] => 
+                    [authorizedContactName:net\authorize\api\contract\v1\OrderType:private] => 
+                    [cardAcceptorRefNumber:net\authorize\api\contract\v1\OrderType:private] => 
+                    [amexDataTAA1:net\authorize\api\contract\v1\OrderType:private] => 
+                    [amexDataTAA2:net\authorize\api\contract\v1\OrderType:private] => 
+                    [amexDataTAA3:net\authorize\api\contract\v1\OrderType:private] => 
+                    [amexDataTAA4:net\authorize\api\contract\v1\OrderType:private] => 
+                )
+
+            [lineItems:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [tax:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [duty:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [shipping:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [taxExempt:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [poNumber:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [customer:net\authorize\api\contract\v1\TransactionRequestType:private] => net\authorize\api\contract\v1\CustomerDataType Object
+                (
+                    [type:net\authorize\api\contract\v1\CustomerDataType:private] => individual
+                    [id:net\authorize\api\contract\v1\CustomerDataType:private] => 99999456654
+                    [email:net\authorize\api\contract\v1\CustomerDataType:private] => k163807@nu.edu.pk
+                    [driversLicense:net\authorize\api\contract\v1\CustomerDataType:private] => 
+                    [taxId:net\authorize\api\contract\v1\CustomerDataType:private] => 
+                )
+
+            [billTo:net\authorize\api\contract\v1\TransactionRequestType:private] => net\authorize\api\contract\v1\CustomerAddressType Object
+                (
+                    [phoneNumber:net\authorize\api\contract\v1\CustomerAddressType:private] => 
+                    [faxNumber:net\authorize\api\contract\v1\CustomerAddressType:private] => 
+                    [email:net\authorize\api\contract\v1\CustomerAddressType:private] => 
+                    [firstName:net\authorize\api\contract\v1\NameAndAddressType:private] => Shehmeer
+                    [lastName:net\authorize\api\contract\v1\NameAndAddressType:private] => Adil
+                    [company:net\authorize\api\contract\v1\NameAndAddressType:private] => FAST-Uni
+                    [address:net\authorize\api\contract\v1\NameAndAddressType:private] => None
+                    [city:net\authorize\api\contract\v1\NameAndAddressType:private] => None
+                    [state:net\authorize\api\contract\v1\NameAndAddressType:private] => None
+                    [zip:net\authorize\api\contract\v1\NameAndAddressType:private] => None
+                    [country:net\authorize\api\contract\v1\NameAndAddressType:private] => Pakistan
+                )
+
+            [shipTo:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [customerIP:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [cardholderAuthentication:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [retail:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [employeeId:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [transactionSettings:net\authorize\api\contract\v1\TransactionRequestType:private] => Array
+                (
+                    [0] => net\authorize\api\contract\v1\SettingType Object
+                        (
+                            [settingName:net\authorize\api\contract\v1\SettingType:private] => duplicateWindow
+                            [settingValue:net\authorize\api\contract\v1\SettingType:private] => 60
+                        )
+
+                )
+
+            [userFields:net\authorize\api\contract\v1\TransactionRequestType:private] => Array
+                (
+                    [0] => net\authorize\api\contract\v1\UserFieldType Object
+                        (
+                            [name:net\authorize\api\contract\v1\UserFieldType:private] => customerLoyaltyNum
+                            [value:net\authorize\api\contract\v1\UserFieldType:private] => 1128836273
+                        )
+
+                    [1] => net\authorize\api\contract\v1\UserFieldType Object
+                        (
+                            [name:net\authorize\api\contract\v1\UserFieldType:private] => favoriteColor
+                            [value:net\authorize\api\contract\v1\UserFieldType:private] => blue
+                        )
+
+                )
+
+            [surcharge:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [merchantDescriptor:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [subMerchant:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [tip:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [processingOptions:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [subsequentAuthInformation:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [otherTax:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [shipFrom:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+        )
+
+    [merchantAuthentication:net\authorize\api\contract\v1\ANetApiRequestType:private] => net\authorize\api\contract\v1\MerchantAuthenticationType Object
+        (
+            [name:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 6Jt6pW38
+            [transactionKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => xxxx
+            [sessionToken:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [password:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [impersonationAuthentication:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [fingerPrint:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [clientKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [accessToken:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [mobileDeviceId:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+        )
+
+    [clientId:net\authorize\api\contract\v1\ANetApiRequestType:private] => sdk-php-1.9.9
+    [refId:net\authorize\api\contract\v1\ANetApiRequestType:private] => ref1544606285
+)
+
+ Wed, 12 Dec 2018 10:18:10 +0100 INFO : [execute] (C:\xampp\htdocs\OOADProject\student\includes\vendor\authorizenet\authorizenet\lib\net\authorize\api\controller\base\ApiOperationBase.php : 118) - Request  Serialization End
+ Wed, 12 Dec 2018 10:18:10 +0100 INFO : [_sendRequest] (C:\xampp\htdocs\OOADProject\student\includes\vendor\authorizenet\authorizenet\lib\net\authorize\util\HttpClient.php : 75) -  Url: https://apitest.authorize.net/xml/v1/request.api
+ Wed, 12 Dec 2018 10:18:10 +0100 INFO : [_sendRequest] (C:\xampp\htdocs\OOADProject\student\includes\vendor\authorizenet\authorizenet\lib\net\authorize\util\HttpClient.php : 77) - Request to AnetApi: 
+<?xml version="1.0" encoding="UTF-8"?>
+<createTransactionRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name><![CDATA[6Jt6pW38]]></name>
+    <transactionKey>xxxx</transactionKey>
+  </merchantAuthentication>
+  <clientId><![CDATA[sdk-php-1.9.9]]></clientId>
+  <refId><![CDATA[ref1544606285]]></refId>
+  <transactionRequest>
+    <transactionType><![CDATA[authOnlyTransaction]]></transactionType>
+    <amount>30000.0</amount>
+    <payment>
+      <creditCard>
+        <cardNumber>xxxx-1111</cardNumber>
+        <expirationDate>xxxx</expirationDate>
+        <cardCode>xxxx</cardCode>
+      </creditCard>
+    </payment>
+    <order>
+      <invoiceNumber><![CDATA[10101]]></invoiceNumber>
+      <description><![CDATA[Student Fees]]></description>
+    </order>
+    <customer>
+      <type><![CDATA[individual]]></type>
+      <id><![CDATA[99999456654]]></id>
+      <email><![CDATA[k163807@nu.edu.pk]]></email>
+    </customer>
+    <billTo>
+      <firstName><![CDATA[Shehmeer]]></firstName>
+      <lastName><![CDATA[Adil]]></lastName>
+      <company><![CDATA[FAST-Uni]]></company>
+      <address><![CDATA[None]]></address>
+      <city><![CDATA[None]]></city>
+      <state><![CDATA[None]]></state>
+      <zip><![CDATA[None]]></zip>
+      <country><![CDATA[Pakistan]]></country>
+    </billTo>
+    <transactionSettings>
+      <setting>
+        <settingName><![CDATA[duplicateWindow]]></settingName>
+        <settingValue><![CDATA[60]]></settingValue>
+      </setting>
+    </transactionSettings>
+    <userFields>
+      <userField>
+        <name><![CDATA[customerLoyaltyNum]]></name>
+        <value><![CDATA[1128836273]]></value>
+      </userField>
+      <userField>
+        <name><![CDATA[favoriteColor]]></name>
+        <value><![CDATA[blue]]></value>
+      </userField>
+    </userFields>
+  </transactionRequest>
+</createTransactionRequest>
+
+ Wed, 12 Dec 2018 10:18:10 +0100 INFO : [_sendRequest] (C:\xampp\htdocs\OOADProject\student\includes\vendor\authorizenet\authorizenet\lib\net\authorize\util\HttpClient.php : 89) - Sending 'XML' Request type
+ Wed, 12 Dec 2018 10:18:10 +0100 INFO : [_sendRequest] (C:\xampp\htdocs\OOADProject\student\includes\vendor\authorizenet\authorizenet\lib\net\authorize\util\HttpClient.php : 94) - Sending http request via Curl
+ Wed, 12 Dec 2018 10:18:14 +0100 INFO : [_sendRequest] (C:\xampp\htdocs\OOADProject\student\includes\vendor\authorizenet\authorizenet\lib\net\authorize\util\HttpClient.php : 96) - Response from AnetApi: ﻿<?xml version="1.0" encoding="utf-8"?><createTransactionResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd"><refId>ref1544606285</refId><messages><resultCode>Error</resultCode><message><code>E00027</code><text>The transaction was unsuccessful.</text></message></messages><transactionResponse><responseCode>3</responseCode><authCode /><avsResultCode>P</avsResultCode><cvvResultCode /><cavvResultCode /><transId>0</transId><refTransID /><transHash>6239C62380F59D0F089FD958773E2371</transHash><testRequest>0</testRequest><accountNumber>XXXX1111</accountNumber><accountType /><errors><error><errorCode>6</errorCode><errorText>The credit card number is invalid.</errorText></error></errors><userFields><userField><name>customerLoyaltyNum</name><value>1128836273</value></userField><userField><name>favoriteColor</name><value>blue</value></userField></userFields><transHashSha2 /></transactionResponse></createTransactionResponse>
+ Wed, 12 Dec 2018 10:18:14 +0100 INFO : [execute] (C:\xampp\htdocs\OOADProject\student\includes\vendor\authorizenet\authorizenet\lib\net\authorize\api\controller\base\ApiOperationBase.php : 128) - Response De-Serialization Begin
+ Wed, 12 Dec 2018 10:18:14 +0100 INFO : [execute] (C:\xampp\htdocs\OOADProject\student\includes\vendor\authorizenet\authorizenet\lib\net\authorize\api\controller\base\ApiOperationBase.php : 130) - Response De-Serialization End
+ Wed, 12 Dec 2018 10:23:25 +0100 INFO : [execute] (C:\xampp\htdocs\OOADProject\student\includes\vendor\authorizenet\authorizenet\lib\net\authorize\api\controller\base\ApiOperationBase.php : 114) - Request Serialization Begin
+ Wed, 12 Dec 2018 10:23:25 +0100 DEBUG : [execute] (C:\xampp\htdocs\OOADProject\student\includes\vendor\authorizenet\authorizenet\lib\net\authorize\api\controller\base\ApiOperationBase.php : 115) - net\authorize\api\contract\v1\CreateTransactionRequest Object
+(
+    [transactionRequest:net\authorize\api\contract\v1\CreateTransactionRequest:private] => net\authorize\api\contract\v1\TransactionRequestType Object
+        (
+            [transactionType:net\authorize\api\contract\v1\TransactionRequestType:private] => authOnlyTransaction
+            [amount:net\authorize\api\contract\v1\TransactionRequestType:private] => 30000
+            [currencyCode:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [payment:net\authorize\api\contract\v1\TransactionRequestType:private] => net\authorize\api\contract\v1\PaymentType Object
+                (
+                    [creditCard:net\authorize\api\contract\v1\PaymentType:private] => net\authorize\api\contract\v1\CreditCardType Object
+                        (
+                            [cardCode:net\authorize\api\contract\v1\CreditCardType:private] => xxxx
+                            [isPaymentToken:net\authorize\api\contract\v1\CreditCardType:private] => 
+                            [cryptogram:net\authorize\api\contract\v1\CreditCardType:private] => 
+                            [tokenRequestorName:net\authorize\api\contract\v1\CreditCardType:private] => 
+                            [tokenRequestorId:net\authorize\api\contract\v1\CreditCardType:private] => 
+                            [tokenRequestorEci:net\authorize\api\contract\v1\CreditCardType:private] => 
+                            [cardNumber:net\authorize\api\contract\v1\CreditCardSimpleType:private] => xxxx-1111
+                            [expirationDate:net\authorize\api\contract\v1\CreditCardSimpleType:private] => xxxx
+                        )
+
+                    [bankAccount:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [trackData:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [encryptedTrackData:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [payPal:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [opaqueData:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [emv:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [dataSource:net\authorize\api\contract\v1\PaymentType:private] => 
+                )
+
+            [profile:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [solution:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [callId:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [terminalNumber:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [authCode:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [refTransId:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [splitTenderId:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [order:net\authorize\api\contract\v1\TransactionRequestType:private] => net\authorize\api\contract\v1\OrderType Object
+                (
+                    [invoiceNumber:net\authorize\api\contract\v1\OrderType:private] => 10101
+                    [description:net\authorize\api\contract\v1\OrderType:private] => Student Fees
+                    [discountAmount:net\authorize\api\contract\v1\OrderType:private] => 
+                    [taxIsAfterDiscount:net\authorize\api\contract\v1\OrderType:private] => 
+                    [totalTaxTypeCode:net\authorize\api\contract\v1\OrderType:private] => 
+                    [purchaserVATRegistrationNumber:net\authorize\api\contract\v1\OrderType:private] => 
+                    [merchantVATRegistrationNumber:net\authorize\api\contract\v1\OrderType:private] => 
+                    [vatInvoiceReferenceNumber:net\authorize\api\contract\v1\OrderType:private] => 
+                    [purchaserCode:net\authorize\api\contract\v1\OrderType:private] => 
+                    [summaryCommodityCode:net\authorize\api\contract\v1\OrderType:private] => 
+                    [purchaseOrderDateUTC:net\authorize\api\contract\v1\OrderType:private] => 
+                    [supplierOrderReference:net\authorize\api\contract\v1\OrderType:private] => 
+                    [authorizedContactName:net\authorize\api\contract\v1\OrderType:private] => 
+                    [cardAcceptorRefNumber:net\authorize\api\contract\v1\OrderType:private] => 
+                    [amexDataTAA1:net\authorize\api\contract\v1\OrderType:private] => 
+                    [amexDataTAA2:net\authorize\api\contract\v1\OrderType:private] => 
+                    [amexDataTAA3:net\authorize\api\contract\v1\OrderType:private] => 
+                    [amexDataTAA4:net\authorize\api\contract\v1\OrderType:private] => 
+                )
+
+            [lineItems:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [tax:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [duty:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [shipping:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [taxExempt:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [poNumber:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [customer:net\authorize\api\contract\v1\TransactionRequestType:private] => net\authorize\api\contract\v1\CustomerDataType Object
+                (
+                    [type:net\authorize\api\contract\v1\CustomerDataType:private] => individual
+                    [id:net\authorize\api\contract\v1\CustomerDataType:private] => 99999456654
+                    [email:net\authorize\api\contract\v1\CustomerDataType:private] => k163807@nu.edu.pk
+                    [driversLicense:net\authorize\api\contract\v1\CustomerDataType:private] => 
+                    [taxId:net\authorize\api\contract\v1\CustomerDataType:private] => 
+                )
+
+            [billTo:net\authorize\api\contract\v1\TransactionRequestType:private] => net\authorize\api\contract\v1\CustomerAddressType Object
+                (
+                    [phoneNumber:net\authorize\api\contract\v1\CustomerAddressType:private] => 
+                    [faxNumber:net\authorize\api\contract\v1\CustomerAddressType:private] => 
+                    [email:net\authorize\api\contract\v1\CustomerAddressType:private] => 
+                    [firstName:net\authorize\api\contract\v1\NameAndAddressType:private] => aaa
+                    [lastName:net\authorize\api\contract\v1\NameAndAddressType:private] => aaa
+                    [company:net\authorize\api\contract\v1\NameAndAddressType:private] => aaa
+                    [address:net\authorize\api\contract\v1\NameAndAddressType:private] => aaa
+                    [city:net\authorize\api\contract\v1\NameAndAddressType:private] => aaa
+                    [state:net\authorize\api\contract\v1\NameAndAddressType:private] => aaa
+                    [zip:net\authorize\api\contract\v1\NameAndAddressType:private] => 123
+                    [country:net\authorize\api\contract\v1\NameAndAddressType:private] => Pakistan
+                )
+
+            [shipTo:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [customerIP:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [cardholderAuthentication:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [retail:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [employeeId:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [transactionSettings:net\authorize\api\contract\v1\TransactionRequestType:private] => Array
+                (
+                    [0] => net\authorize\api\contract\v1\SettingType Object
+                        (
+                            [settingName:net\authorize\api\contract\v1\SettingType:private] => duplicateWindow
+                            [settingValue:net\authorize\api\contract\v1\SettingType:private] => 60
+                        )
+
+                )
+
+            [userFields:net\authorize\api\contract\v1\TransactionRequestType:private] => Array
+                (
+                    [0] => net\authorize\api\contract\v1\UserFieldType Object
+                        (
+                            [name:net\authorize\api\contract\v1\UserFieldType:private] => customerLoyaltyNum
+                            [value:net\authorize\api\contract\v1\UserFieldType:private] => 1128836273
+                        )
+
+                    [1] => net\authorize\api\contract\v1\UserFieldType Object
+                        (
+                            [name:net\authorize\api\contract\v1\UserFieldType:private] => favoriteColor
+                            [value:net\authorize\api\contract\v1\UserFieldType:private] => blue
+                        )
+
+                )
+
+            [surcharge:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [merchantDescriptor:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [subMerchant:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [tip:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [processingOptions:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [subsequentAuthInformation:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [otherTax:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [shipFrom:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+        )
+
+    [merchantAuthentication:net\authorize\api\contract\v1\ANetApiRequestType:private] => net\authorize\api\contract\v1\MerchantAuthenticationType Object
+        (
+            [name:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 6Jt6pW38
+            [transactionKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => xxxx
+            [sessionToken:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [password:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [impersonationAuthentication:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [fingerPrint:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [clientKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [accessToken:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [mobileDeviceId:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+        )
+
+    [clientId:net\authorize\api\contract\v1\ANetApiRequestType:private] => sdk-php-1.9.9
+    [refId:net\authorize\api\contract\v1\ANetApiRequestType:private] => ref1544606605
+)
+
+ Wed, 12 Dec 2018 10:23:25 +0100 INFO : [execute] (C:\xampp\htdocs\OOADProject\student\includes\vendor\authorizenet\authorizenet\lib\net\authorize\api\controller\base\ApiOperationBase.php : 118) - Request  Serialization End
+ Wed, 12 Dec 2018 10:23:25 +0100 INFO : [_sendRequest] (C:\xampp\htdocs\OOADProject\student\includes\vendor\authorizenet\authorizenet\lib\net\authorize\util\HttpClient.php : 75) -  Url: https://apitest.authorize.net/xml/v1/request.api
+ Wed, 12 Dec 2018 10:23:25 +0100 INFO : [_sendRequest] (C:\xampp\htdocs\OOADProject\student\includes\vendor\authorizenet\authorizenet\lib\net\authorize\util\HttpClient.php : 77) - Request to AnetApi: 
+<?xml version="1.0" encoding="UTF-8"?>
+<createTransactionRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name><![CDATA[6Jt6pW38]]></name>
+    <transactionKey>xxxx</transactionKey>
+  </merchantAuthentication>
+  <clientId><![CDATA[sdk-php-1.9.9]]></clientId>
+  <refId><![CDATA[ref1544606605]]></refId>
+  <transactionRequest>
+    <transactionType><![CDATA[authOnlyTransaction]]></transactionType>
+    <amount>30000.0</amount>
+    <payment>
+      <creditCard>
+        <cardNumber>xxxx-1111</cardNumber>
+        <expirationDate>xxxx</expirationDate>
+        <cardCode>xxxx</cardCode>
+      </creditCard>
+    </payment>
+    <order>
+      <invoiceNumber><![CDATA[10101]]></invoiceNumber>
+      <description><![CDATA[Student Fees]]></description>
+    </order>
+    <customer>
+      <type><![CDATA[individual]]></type>
+      <id><![CDATA[99999456654]]></id>
+      <email><![CDATA[k163807@nu.edu.pk]]></email>
+    </customer>
+    <billTo>
+      <firstName><![CDATA[aaa]]></firstName>
+      <lastName><![CDATA[aaa]]></lastName>
+      <company><![CDATA[aaa]]></company>
+      <address><![CDATA[aaa]]></address>
+      <city><![CDATA[aaa]]></city>
+      <state><![CDATA[aaa]]></state>
+      <zip><![CDATA[123]]></zip>
+      <country><![CDATA[Pakistan]]></country>
+    </billTo>
+    <transactionSettings>
+      <setting>
+        <settingName><![CDATA[duplicateWindow]]></settingName>
+        <settingValue><![CDATA[60]]></settingValue>
+      </setting>
+    </transactionSettings>
+    <userFields>
+      <userField>
+        <name><![CDATA[customerLoyaltyNum]]></name>
+        <value><![CDATA[1128836273]]></value>
+      </userField>
+      <userField>
+        <name><![CDATA[favoriteColor]]></name>
+        <value><![CDATA[blue]]></value>
+      </userField>
+    </userFields>
+  </transactionRequest>
+</createTransactionRequest>
+
+ Wed, 12 Dec 2018 10:23:25 +0100 INFO : [_sendRequest] (C:\xampp\htdocs\OOADProject\student\includes\vendor\authorizenet\authorizenet\lib\net\authorize\util\HttpClient.php : 89) - Sending 'XML' Request type
+ Wed, 12 Dec 2018 10:23:25 +0100 INFO : [_sendRequest] (C:\xampp\htdocs\OOADProject\student\includes\vendor\authorizenet\authorizenet\lib\net\authorize\util\HttpClient.php : 94) - Sending http request via Curl
+ Wed, 12 Dec 2018 10:23:28 +0100 INFO : [_sendRequest] (C:\xampp\htdocs\OOADProject\student\includes\vendor\authorizenet\authorizenet\lib\net\authorize\util\HttpClient.php : 96) - Response from AnetApi: ﻿<?xml version="1.0" encoding="utf-8"?><createTransactionResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd"><refId>ref1544606605</refId><messages><resultCode>Ok</resultCode><message><code>I00001</code><text>Successful.</text></message></messages><transactionResponse><responseCode>1</responseCode><authCode>NTWIQ8</authCode><avsResultCode>Y</avsResultCode><cvvResultCode>P</cvvResultCode><cavvResultCode>2</cavvResultCode><transId>40022743160</transId><refTransID /><transHash>C89206D4F509BC5B33EF6E29112DF2D4</transHash><testRequest>0</testRequest><accountNumber>XXXX1111</accountNumber><accountType>Visa</accountType><messages><message><code>1</code><description>This transaction has been approved.</description></message></messages><userFields><userField><name>customerLoyaltyNum</name><value>1128836273</value></userField><userField><name>favoriteColor</name><value>blue</value></userField></userFields><transHashSha2 /></transactionResponse></createTransactionResponse>
+ Wed, 12 Dec 2018 10:23:28 +0100 INFO : [execute] (C:\xampp\htdocs\OOADProject\student\includes\vendor\authorizenet\authorizenet\lib\net\authorize\api\controller\base\ApiOperationBase.php : 128) - Response De-Serialization Begin
+ Wed, 12 Dec 2018 10:23:28 +0100 INFO : [execute] (C:\xampp\htdocs\OOADProject\student\includes\vendor\authorizenet\authorizenet\lib\net\authorize\api\controller\base\ApiOperationBase.php : 130) - Response De-Serialization End
+ Wed, 12 Dec 2018 10:59:14 +0100 INFO : [execute] (C:\xampp\htdocs\OOADProject\student\includes\vendor\authorizenet\authorizenet\lib\net\authorize\api\controller\base\ApiOperationBase.php : 114) - Request Serialization Begin
+ Wed, 12 Dec 2018 10:59:14 +0100 DEBUG : [execute] (C:\xampp\htdocs\OOADProject\student\includes\vendor\authorizenet\authorizenet\lib\net\authorize\api\controller\base\ApiOperationBase.php : 115) - net\authorize\api\contract\v1\CreateTransactionRequest Object
+(
+    [transactionRequest:net\authorize\api\contract\v1\CreateTransactionRequest:private] => net\authorize\api\contract\v1\TransactionRequestType Object
+        (
+            [transactionType:net\authorize\api\contract\v1\TransactionRequestType:private] => authOnlyTransaction
+            [amount:net\authorize\api\contract\v1\TransactionRequestType:private] => 30000
+            [currencyCode:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [payment:net\authorize\api\contract\v1\TransactionRequestType:private] => net\authorize\api\contract\v1\PaymentType Object
+                (
+                    [creditCard:net\authorize\api\contract\v1\PaymentType:private] => net\authorize\api\contract\v1\CreditCardType Object
+                        (
+                            [cardCode:net\authorize\api\contract\v1\CreditCardType:private] => xxxx
+                            [isPaymentToken:net\authorize\api\contract\v1\CreditCardType:private] => 
+                            [cryptogram:net\authorize\api\contract\v1\CreditCardType:private] => 
+                            [tokenRequestorName:net\authorize\api\contract\v1\CreditCardType:private] => 
+                            [tokenRequestorId:net\authorize\api\contract\v1\CreditCardType:private] => 
+                            [tokenRequestorEci:net\authorize\api\contract\v1\CreditCardType:private] => 
+                            [cardNumber:net\authorize\api\contract\v1\CreditCardSimpleType:private] => xxxx-1111
+                            [expirationDate:net\authorize\api\contract\v1\CreditCardSimpleType:private] => xxxx
+                        )
+
+                    [bankAccount:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [trackData:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [encryptedTrackData:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [payPal:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [opaqueData:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [emv:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [dataSource:net\authorize\api\contract\v1\PaymentType:private] => 
+                )
+
+            [profile:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [solution:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [callId:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [terminalNumber:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [authCode:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [refTransId:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [splitTenderId:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [order:net\authorize\api\contract\v1\TransactionRequestType:private] => net\authorize\api\contract\v1\OrderType Object
+                (
+                    [invoiceNumber:net\authorize\api\contract\v1\OrderType:private] => 10101
+                    [description:net\authorize\api\contract\v1\OrderType:private] => Student Fees
+                    [discountAmount:net\authorize\api\contract\v1\OrderType:private] => 
+                    [taxIsAfterDiscount:net\authorize\api\contract\v1\OrderType:private] => 
+                    [totalTaxTypeCode:net\authorize\api\contract\v1\OrderType:private] => 
+                    [purchaserVATRegistrationNumber:net\authorize\api\contract\v1\OrderType:private] => 
+                    [merchantVATRegistrationNumber:net\authorize\api\contract\v1\OrderType:private] => 
+                    [vatInvoiceReferenceNumber:net\authorize\api\contract\v1\OrderType:private] => 
+                    [purchaserCode:net\authorize\api\contract\v1\OrderType:private] => 
+                    [summaryCommodityCode:net\authorize\api\contract\v1\OrderType:private] => 
+                    [purchaseOrderDateUTC:net\authorize\api\contract\v1\OrderType:private] => 
+                    [supplierOrderReference:net\authorize\api\contract\v1\OrderType:private] => 
+                    [authorizedContactName:net\authorize\api\contract\v1\OrderType:private] => 
+                    [cardAcceptorRefNumber:net\authorize\api\contract\v1\OrderType:private] => 
+                    [amexDataTAA1:net\authorize\api\contract\v1\OrderType:private] => 
+                    [amexDataTAA2:net\authorize\api\contract\v1\OrderType:private] => 
+                    [amexDataTAA3:net\authorize\api\contract\v1\OrderType:private] => 
+                    [amexDataTAA4:net\authorize\api\contract\v1\OrderType:private] => 
+                )
+
+            [lineItems:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [tax:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [duty:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [shipping:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [taxExempt:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [poNumber:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [customer:net\authorize\api\contract\v1\TransactionRequestType:private] => net\authorize\api\contract\v1\CustomerDataType Object
+                (
+                    [type:net\authorize\api\contract\v1\CustomerDataType:private] => individual
+                    [id:net\authorize\api\contract\v1\CustomerDataType:private] => 99999456654
+                    [email:net\authorize\api\contract\v1\CustomerDataType:private] => k163807@nu.edu.pk
+                    [driversLicense:net\authorize\api\contract\v1\CustomerDataType:private] => 
+                    [taxId:net\authorize\api\contract\v1\CustomerDataType:private] => 
+                )
+
+            [billTo:net\authorize\api\contract\v1\TransactionRequestType:private] => net\authorize\api\contract\v1\CustomerAddressType Object
+                (
+                    [phoneNumber:net\authorize\api\contract\v1\CustomerAddressType:private] => 
+                    [faxNumber:net\authorize\api\contract\v1\CustomerAddressType:private] => 
+                    [email:net\authorize\api\contract\v1\CustomerAddressType:private] => 
+                    [firstName:net\authorize\api\contract\v1\NameAndAddressType:private] => aa
+                    [lastName:net\authorize\api\contract\v1\NameAndAddressType:private] => aa
+                    [company:net\authorize\api\contract\v1\NameAndAddressType:private] => aa
+                    [address:net\authorize\api\contract\v1\NameAndAddressType:private] => aa
+                    [city:net\authorize\api\contract\v1\NameAndAddressType:private] => aa
+                    [state:net\authorize\api\contract\v1\NameAndAddressType:private] => aa
+                    [zip:net\authorize\api\contract\v1\NameAndAddressType:private] => 111
+                    [country:net\authorize\api\contract\v1\NameAndAddressType:private] => Pakistan
+                )
+
+            [shipTo:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [customerIP:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [cardholderAuthentication:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [retail:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [employeeId:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [transactionSettings:net\authorize\api\contract\v1\TransactionRequestType:private] => Array
+                (
+                    [0] => net\authorize\api\contract\v1\SettingType Object
+                        (
+                            [settingName:net\authorize\api\contract\v1\SettingType:private] => duplicateWindow
+                            [settingValue:net\authorize\api\contract\v1\SettingType:private] => 60
+                        )
+
+                )
+
+            [userFields:net\authorize\api\contract\v1\TransactionRequestType:private] => Array
+                (
+                    [0] => net\authorize\api\contract\v1\UserFieldType Object
+                        (
+                            [name:net\authorize\api\contract\v1\UserFieldType:private] => customerLoyaltyNum
+                            [value:net\authorize\api\contract\v1\UserFieldType:private] => 1128836273
+                        )
+
+                    [1] => net\authorize\api\contract\v1\UserFieldType Object
+                        (
+                            [name:net\authorize\api\contract\v1\UserFieldType:private] => favoriteColor
+                            [value:net\authorize\api\contract\v1\UserFieldType:private] => blue
+                        )
+
+                )
+
+            [surcharge:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [merchantDescriptor:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [subMerchant:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [tip:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [processingOptions:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [subsequentAuthInformation:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [otherTax:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [shipFrom:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+        )
+
+    [merchantAuthentication:net\authorize\api\contract\v1\ANetApiRequestType:private] => net\authorize\api\contract\v1\MerchantAuthenticationType Object
+        (
+            [name:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 6Jt6pW38
+            [transactionKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => xxxx
+            [sessionToken:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [password:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [impersonationAuthentication:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [fingerPrint:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [clientKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [accessToken:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [mobileDeviceId:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+        )
+
+    [clientId:net\authorize\api\contract\v1\ANetApiRequestType:private] => sdk-php-1.9.9
+    [refId:net\authorize\api\contract\v1\ANetApiRequestType:private] => ref1544608754
+)
+
+ Wed, 12 Dec 2018 10:59:14 +0100 INFO : [execute] (C:\xampp\htdocs\OOADProject\student\includes\vendor\authorizenet\authorizenet\lib\net\authorize\api\controller\base\ApiOperationBase.php : 118) - Request  Serialization End
+ Wed, 12 Dec 2018 10:59:14 +0100 INFO : [_sendRequest] (C:\xampp\htdocs\OOADProject\student\includes\vendor\authorizenet\authorizenet\lib\net\authorize\util\HttpClient.php : 75) -  Url: https://apitest.authorize.net/xml/v1/request.api
+ Wed, 12 Dec 2018 10:59:14 +0100 INFO : [_sendRequest] (C:\xampp\htdocs\OOADProject\student\includes\vendor\authorizenet\authorizenet\lib\net\authorize\util\HttpClient.php : 77) - Request to AnetApi: 
+<?xml version="1.0" encoding="UTF-8"?>
+<createTransactionRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name><![CDATA[6Jt6pW38]]></name>
+    <transactionKey>xxxx</transactionKey>
+  </merchantAuthentication>
+  <clientId><![CDATA[sdk-php-1.9.9]]></clientId>
+  <refId><![CDATA[ref1544608754]]></refId>
+  <transactionRequest>
+    <transactionType><![CDATA[authOnlyTransaction]]></transactionType>
+    <amount>30000.0</amount>
+    <payment>
+      <creditCard>
+        <cardNumber>xxxx-1111</cardNumber>
+        <expirationDate>xxxx</expirationDate>
+        <cardCode>xxxx</cardCode>
+      </creditCard>
+    </payment>
+    <order>
+      <invoiceNumber><![CDATA[10101]]></invoiceNumber>
+      <description><![CDATA[Student Fees]]></description>
+    </order>
+    <customer>
+      <type><![CDATA[individual]]></type>
+      <id><![CDATA[99999456654]]></id>
+      <email><![CDATA[k163807@nu.edu.pk]]></email>
+    </customer>
+    <billTo>
+      <firstName><![CDATA[aa]]></firstName>
+      <lastName><![CDATA[aa]]></lastName>
+      <company><![CDATA[aa]]></company>
+      <address><![CDATA[aa]]></address>
+      <city><![CDATA[aa]]></city>
+      <state><![CDATA[aa]]></state>
+      <zip><![CDATA[111]]></zip>
+      <country><![CDATA[Pakistan]]></country>
+    </billTo>
+    <transactionSettings>
+      <setting>
+        <settingName><![CDATA[duplicateWindow]]></settingName>
+        <settingValue><![CDATA[60]]></settingValue>
+      </setting>
+    </transactionSettings>
+    <userFields>
+      <userField>
+        <name><![CDATA[customerLoyaltyNum]]></name>
+        <value><![CDATA[1128836273]]></value>
+      </userField>
+      <userField>
+        <name><![CDATA[favoriteColor]]></name>
+        <value><![CDATA[blue]]></value>
+      </userField>
+    </userFields>
+  </transactionRequest>
+</createTransactionRequest>
+
+ Wed, 12 Dec 2018 10:59:14 +0100 INFO : [_sendRequest] (C:\xampp\htdocs\OOADProject\student\includes\vendor\authorizenet\authorizenet\lib\net\authorize\util\HttpClient.php : 89) - Sending 'XML' Request type
+ Wed, 12 Dec 2018 10:59:14 +0100 INFO : [_sendRequest] (C:\xampp\htdocs\OOADProject\student\includes\vendor\authorizenet\authorizenet\lib\net\authorize\util\HttpClient.php : 94) - Sending http request via Curl
+ Wed, 12 Dec 2018 10:59:16 +0100 INFO : [_sendRequest] (C:\xampp\htdocs\OOADProject\student\includes\vendor\authorizenet\authorizenet\lib\net\authorize\util\HttpClient.php : 96) - Response from AnetApi: ﻿<?xml version="1.0" encoding="utf-8"?><createTransactionResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd"><refId>ref1544608754</refId><messages><resultCode>Ok</resultCode><message><code>I00001</code><text>Successful.</text></message></messages><transactionResponse><responseCode>1</responseCode><authCode>JVAB4E</authCode><avsResultCode>Y</avsResultCode><cvvResultCode>P</cvvResultCode><cavvResultCode>2</cavvResultCode><transId>40022743495</transId><refTransID /><transHash>784B1E4265F6FE9B3DABFD396153E96C</transHash><testRequest>0</testRequest><accountNumber>XXXX1111</accountNumber><accountType>Visa</accountType><messages><message><code>1</code><description>This transaction has been approved.</description></message></messages><userFields><userField><name>customerLoyaltyNum</name><value>1128836273</value></userField><userField><name>favoriteColor</name><value>blue</value></userField></userFields><transHashSha2 /></transactionResponse></createTransactionResponse>
+ Wed, 12 Dec 2018 10:59:16 +0100 INFO : [execute] (C:\xampp\htdocs\OOADProject\student\includes\vendor\authorizenet\authorizenet\lib\net\authorize\api\controller\base\ApiOperationBase.php : 128) - Response De-Serialization Begin
+ Wed, 12 Dec 2018 10:59:16 +0100 INFO : [execute] (C:\xampp\htdocs\OOADProject\student\includes\vendor\authorizenet\authorizenet\lib\net\authorize\api\controller\base\ApiOperationBase.php : 130) - Response De-Serialization End
+ Wed, 12 Dec 2018 11:46:51 +0100 INFO : [execute] (C:\xampp\htdocs\OOADProject\student\includes\vendor\authorizenet\authorizenet\lib\net\authorize\api\controller\base\ApiOperationBase.php : 114) - Request Serialization Begin
+ Wed, 12 Dec 2018 11:46:51 +0100 DEBUG : [execute] (C:\xampp\htdocs\OOADProject\student\includes\vendor\authorizenet\authorizenet\lib\net\authorize\api\controller\base\ApiOperationBase.php : 115) - net\authorize\api\contract\v1\CreateTransactionRequest Object
+(
+    [transactionRequest:net\authorize\api\contract\v1\CreateTransactionRequest:private] => net\authorize\api\contract\v1\TransactionRequestType Object
+        (
+            [transactionType:net\authorize\api\contract\v1\TransactionRequestType:private] => authOnlyTransaction
+            [amount:net\authorize\api\contract\v1\TransactionRequestType:private] => 30000
+            [currencyCode:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [payment:net\authorize\api\contract\v1\TransactionRequestType:private] => net\authorize\api\contract\v1\PaymentType Object
+                (
+                    [creditCard:net\authorize\api\contract\v1\PaymentType:private] => net\authorize\api\contract\v1\CreditCardType Object
+                        (
+                            [cardCode:net\authorize\api\contract\v1\CreditCardType:private] => xxxx
+                            [isPaymentToken:net\authorize\api\contract\v1\CreditCardType:private] => 
+                            [cryptogram:net\authorize\api\contract\v1\CreditCardType:private] => 
+                            [tokenRequestorName:net\authorize\api\contract\v1\CreditCardType:private] => 
+                            [tokenRequestorId:net\authorize\api\contract\v1\CreditCardType:private] => 
+                            [tokenRequestorEci:net\authorize\api\contract\v1\CreditCardType:private] => 
+                            [cardNumber:net\authorize\api\contract\v1\CreditCardSimpleType:private] => xxxx-1111
+                            [expirationDate:net\authorize\api\contract\v1\CreditCardSimpleType:private] => xxxx
+                        )
+
+                    [bankAccount:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [trackData:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [encryptedTrackData:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [payPal:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [opaqueData:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [emv:net\authorize\api\contract\v1\PaymentType:private] => 
+                    [dataSource:net\authorize\api\contract\v1\PaymentType:private] => 
+                )
+
+            [profile:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [solution:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [callId:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [terminalNumber:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [authCode:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [refTransId:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [splitTenderId:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [order:net\authorize\api\contract\v1\TransactionRequestType:private] => net\authorize\api\contract\v1\OrderType Object
+                (
+                    [invoiceNumber:net\authorize\api\contract\v1\OrderType:private] => 10101
+                    [description:net\authorize\api\contract\v1\OrderType:private] => Student Fees
+                    [discountAmount:net\authorize\api\contract\v1\OrderType:private] => 
+                    [taxIsAfterDiscount:net\authorize\api\contract\v1\OrderType:private] => 
+                    [totalTaxTypeCode:net\authorize\api\contract\v1\OrderType:private] => 
+                    [purchaserVATRegistrationNumber:net\authorize\api\contract\v1\OrderType:private] => 
+                    [merchantVATRegistrationNumber:net\authorize\api\contract\v1\OrderType:private] => 
+                    [vatInvoiceReferenceNumber:net\authorize\api\contract\v1\OrderType:private] => 
+                    [purchaserCode:net\authorize\api\contract\v1\OrderType:private] => 
+                    [summaryCommodityCode:net\authorize\api\contract\v1\OrderType:private] => 
+                    [purchaseOrderDateUTC:net\authorize\api\contract\v1\OrderType:private] => 
+                    [supplierOrderReference:net\authorize\api\contract\v1\OrderType:private] => 
+                    [authorizedContactName:net\authorize\api\contract\v1\OrderType:private] => 
+                    [cardAcceptorRefNumber:net\authorize\api\contract\v1\OrderType:private] => 
+                    [amexDataTAA1:net\authorize\api\contract\v1\OrderType:private] => 
+                    [amexDataTAA2:net\authorize\api\contract\v1\OrderType:private] => 
+                    [amexDataTAA3:net\authorize\api\contract\v1\OrderType:private] => 
+                    [amexDataTAA4:net\authorize\api\contract\v1\OrderType:private] => 
+                )
+
+            [lineItems:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [tax:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [duty:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [shipping:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [taxExempt:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [poNumber:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [customer:net\authorize\api\contract\v1\TransactionRequestType:private] => net\authorize\api\contract\v1\CustomerDataType Object
+                (
+                    [type:net\authorize\api\contract\v1\CustomerDataType:private] => individual
+                    [id:net\authorize\api\contract\v1\CustomerDataType:private] => 99999456654
+                    [email:net\authorize\api\contract\v1\CustomerDataType:private] => k163807@nu.edu.pk
+                    [driversLicense:net\authorize\api\contract\v1\CustomerDataType:private] => 
+                    [taxId:net\authorize\api\contract\v1\CustomerDataType:private] => 
+                )
+
+            [billTo:net\authorize\api\contract\v1\TransactionRequestType:private] => net\authorize\api\contract\v1\CustomerAddressType Object
+                (
+                    [phoneNumber:net\authorize\api\contract\v1\CustomerAddressType:private] => 
+                    [faxNumber:net\authorize\api\contract\v1\CustomerAddressType:private] => 
+                    [email:net\authorize\api\contract\v1\CustomerAddressType:private] => 
+                    [firstName:net\authorize\api\contract\v1\NameAndAddressType:private] => aa
+                    [lastName:net\authorize\api\contract\v1\NameAndAddressType:private] => aa
+                    [company:net\authorize\api\contract\v1\NameAndAddressType:private] => aa
+                    [address:net\authorize\api\contract\v1\NameAndAddressType:private] => aa
+                    [city:net\authorize\api\contract\v1\NameAndAddressType:private] => aa
+                    [state:net\authorize\api\contract\v1\NameAndAddressType:private] => aa
+                    [zip:net\authorize\api\contract\v1\NameAndAddressType:private] => 111
+                    [country:net\authorize\api\contract\v1\NameAndAddressType:private] => aa
+                )
+
+            [shipTo:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [customerIP:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [cardholderAuthentication:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [retail:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [employeeId:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [transactionSettings:net\authorize\api\contract\v1\TransactionRequestType:private] => Array
+                (
+                    [0] => net\authorize\api\contract\v1\SettingType Object
+                        (
+                            [settingName:net\authorize\api\contract\v1\SettingType:private] => duplicateWindow
+                            [settingValue:net\authorize\api\contract\v1\SettingType:private] => 60
+                        )
+
+                )
+
+            [userFields:net\authorize\api\contract\v1\TransactionRequestType:private] => Array
+                (
+                    [0] => net\authorize\api\contract\v1\UserFieldType Object
+                        (
+                            [name:net\authorize\api\contract\v1\UserFieldType:private] => customerLoyaltyNum
+                            [value:net\authorize\api\contract\v1\UserFieldType:private] => 1128836273
+                        )
+
+                    [1] => net\authorize\api\contract\v1\UserFieldType Object
+                        (
+                            [name:net\authorize\api\contract\v1\UserFieldType:private] => favoriteColor
+                            [value:net\authorize\api\contract\v1\UserFieldType:private] => blue
+                        )
+
+                )
+
+            [surcharge:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [merchantDescriptor:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [subMerchant:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [tip:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [processingOptions:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [subsequentAuthInformation:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [otherTax:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+            [shipFrom:net\authorize\api\contract\v1\TransactionRequestType:private] => 
+        )
+
+    [merchantAuthentication:net\authorize\api\contract\v1\ANetApiRequestType:private] => net\authorize\api\contract\v1\MerchantAuthenticationType Object
+        (
+            [name:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 6Jt6pW38
+            [transactionKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => xxxx
+            [sessionToken:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [password:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [impersonationAuthentication:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [fingerPrint:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [clientKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [accessToken:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [mobileDeviceId:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+        )
+
+    [clientId:net\authorize\api\contract\v1\ANetApiRequestType:private] => sdk-php-1.9.9
+    [refId:net\authorize\api\contract\v1\ANetApiRequestType:private] => ref1544611611
+)
+
+ Wed, 12 Dec 2018 11:46:51 +0100 INFO : [execute] (C:\xampp\htdocs\OOADProject\student\includes\vendor\authorizenet\authorizenet\lib\net\authorize\api\controller\base\ApiOperationBase.php : 118) - Request  Serialization End
+ Wed, 12 Dec 2018 11:46:51 +0100 INFO : [_sendRequest] (C:\xampp\htdocs\OOADProject\student\includes\vendor\authorizenet\authorizenet\lib\net\authorize\util\HttpClient.php : 75) -  Url: https://apitest.authorize.net/xml/v1/request.api
+ Wed, 12 Dec 2018 11:46:51 +0100 INFO : [_sendRequest] (C:\xampp\htdocs\OOADProject\student\includes\vendor\authorizenet\authorizenet\lib\net\authorize\util\HttpClient.php : 77) - Request to AnetApi: 
+<?xml version="1.0" encoding="UTF-8"?>
+<createTransactionRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name><![CDATA[6Jt6pW38]]></name>
+    <transactionKey>xxxx</transactionKey>
+  </merchantAuthentication>
+  <clientId><![CDATA[sdk-php-1.9.9]]></clientId>
+  <refId><![CDATA[ref1544611611]]></refId>
+  <transactionRequest>
+    <transactionType><![CDATA[authOnlyTransaction]]></transactionType>
+    <amount>30000.0</amount>
+    <payment>
+      <creditCard>
+        <cardNumber>xxxx-1111</cardNumber>
+        <expirationDate>xxxx</expirationDate>
+        <cardCode>xxxx</cardCode>
+      </creditCard>
+    </payment>
+    <order>
+      <invoiceNumber><![CDATA[10101]]></invoiceNumber>
+      <description><![CDATA[Student Fees]]></description>
+    </order>
+    <customer>
+      <type><![CDATA[individual]]></type>
+      <id><![CDATA[99999456654]]></id>
+      <email><![CDATA[k163807@nu.edu.pk]]></email>
+    </customer>
+    <billTo>
+      <firstName><![CDATA[aa]]></firstName>
+      <lastName><![CDATA[aa]]></lastName>
+      <company><![CDATA[aa]]></company>
+      <address><![CDATA[aa]]></address>
+      <city><![CDATA[aa]]></city>
+      <state><![CDATA[aa]]></state>
+      <zip><![CDATA[111]]></zip>
+      <country><![CDATA[aa]]></country>
+    </billTo>
+    <transactionSettings>
+      <setting>
+        <settingName><![CDATA[duplicateWindow]]></settingName>
+        <settingValue><![CDATA[60]]></settingValue>
+      </setting>
+    </transactionSettings>
+    <userFields>
+      <userField>
+        <name><![CDATA[customerLoyaltyNum]]></name>
+        <value><![CDATA[1128836273]]></value>
+      </userField>
+      <userField>
+        <name><![CDATA[favoriteColor]]></name>
+        <value><![CDATA[blue]]></value>
+      </userField>
+    </userFields>
+  </transactionRequest>
+</createTransactionRequest>
+
+ Wed, 12 Dec 2018 11:46:51 +0100 INFO : [_sendRequest] (C:\xampp\htdocs\OOADProject\student\includes\vendor\authorizenet\authorizenet\lib\net\authorize\util\HttpClient.php : 89) - Sending 'XML' Request type
+ Wed, 12 Dec 2018 11:46:51 +0100 INFO : [_sendRequest] (C:\xampp\htdocs\OOADProject\student\includes\vendor\authorizenet\authorizenet\lib\net\authorize\util\HttpClient.php : 94) - Sending http request via Curl
+ Wed, 12 Dec 2018 11:46:51 +0100 INFO : [_sendRequest] (C:\xampp\htdocs\OOADProject\student\includes\vendor\authorizenet\authorizenet\lib\net\authorize\util\HttpClient.php : 96) - Response from AnetApi: 
+ Wed, 12 Dec 2018 11:46:51 +0100 ERROR : [_sendRequest] (C:\xampp\htdocs\OOADProject\student\includes\vendor\authorizenet\authorizenet\lib\net\authorize\util\HttpClient.php : 106) - CURL ERROR: Could not resolve host: apitest.authorize.net
