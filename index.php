@@ -27,7 +27,7 @@
             <?php    
                 include('templates/leftsidebar.php');    
             ?>
-            
+             
             <!-- Left Sidebar Footer -->
             <?php    
                 include('templates/leftsidebarfooter.php');    

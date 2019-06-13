@@ -7676,7 +7676,7 @@ fieldset[disabled] .form-control {
           top: calc(50% - 7.5px);
           right: 15px; }
         .sidebar .menu .list a span {
-          margin: 7px 0 7px 12px;
+          margin: 12px 0 7px 12px;
           color: #333;
           font-weight: bold;
           font-size: 14px;

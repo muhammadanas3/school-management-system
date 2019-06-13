@@ -32,15 +32,34 @@
             </a>
         </li>
         <li>
-            <a href="pages/typography.php">
-                <i class="material-icons">text_fields</i>
-                <span>Typography</span>
+            <a href="pages/add_marks.php">
+                <i class="material-icons">M</i>
+                <span>Add Marks</span>
             </a>
         </li>
         <li>
-            <a href="pages/helper-classes.php">
-                <i class="material-icons">layers</i>
-                <span>Helper Classes</span>
+            <a href="javascript:void(0);" class="menu-toggle">
+                <i class="material-icons">A</i>
+                <span>Announcement</span>
+            </a>
+            <ul class="ml-menu">
+                <li>
+                    <a href="pages/add_announcement.php">
+                        <span>Add Announcement</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="pages/view_announcement.php">
+                        <span>View Announcements</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+
+        <li>
+            <a href="pages/typography.php">
+                <i class="material-icons">A</i>
+                <span>Attendance</span>
             </a>
         </li>
     
